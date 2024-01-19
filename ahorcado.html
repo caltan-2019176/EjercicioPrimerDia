@@ -3,72 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ahorcado Ejercicio</title>
+    <title>Juego del ahorcado</title>
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
-
-    <div class="principal">
-
-        <h1 class="juegoAhorcado">Ahorcado 2024</h1>
-        <h1 id="final"></h1>
-        <h3 id="correcta"></h3>
-        <div class="flex-row no-wrap">
-          <h2 class="palabra" id="palabra"></h2>
-            <canvas id="persona">
-    
-            </canvas>
-        </div>
-        <div class="flex-row" id="turnos">
-          <div class="col">
-            <h4>Intentos restantes: <span id="intentos">6</span></h4>
-          </div>
-          <div class="col">
-            <button onclick="inicio()" id="inicio">Cambiar palabra</button>
-          </div>
-        </div>
-        
-        <div class="flex-row">
-          <div class="col">
-            <div class="flex-row" id="teclado">
+    <div class="container grid-md">
+        <div class="columns">
+            <div class="column col-11.5">
+                <h5>Ahorcado-Carlos Altán-2019176</h5>
             </div>
-          </div>
-          <div class="col"></div>
-        </div>
 
-      </div>
-
-
-      <div class="contenedor-general">
-        <h1 class="titulo-principal">Juego del ahorcado</h1>
-        <div class="inicio-container" id="inicioContent">
-          <h2 class="inicio-tittle">Ingrese una palabra, una pista(opcional) y presione el boton jugar para continuar</h2>
-          <h3>Palabra:</h3>
-          <input type="text" name="" id="inputPalabra">
-          <h3>Pista:</h3>
-          <input type="text" name="" id="inputLetra">
-          <p id="infoInicio"></p>
-          <div class="button-container">
-            <span href="" class="button" id="startBtn">Jugar</span>
-          </div>
-        </div>
-        <div class="juego-container" id="juegoContainer">
-          <div class="palabra-container" id="palabraContainer"></div>
-          <div class="info-container" id="infoJuego"></div>
-          <div class="juego-container_td">
-            <div class="dibujo-container" id="dibujoContainer">
-              
+            <div class="column col-12">
+                <div class="column col-4 col-sm-12">
+                    <canvas id="canvas" width="400" height="400"></canvas>
+                    <p>Intentos restantes: <span id="intentos-restantes">7</span></p>
+                </div>
+                <div class="columns">
+                    <div class="column col-8 col-sm-11.5">
+                        <div id="word"></div>
+                    </div>
+                </div>
+            </div>           
+            <div class="column col-12" >
+                <div id="letras" class="columns" id="letras"></div>
             </div>
-            <div class="left-container" id="juegoContent">
-              <div class="teclado-container" id="tecladoContainer"></div>
+            <div id="resultado-popup" class="popup hide">
+                <div class="popup-contenido">
+                    <h2>¡Juego Terminado!</h2>
+                    <p id="texto-resultado"></p>
+                    <button id="nuevo-juego">Iniciar Nueva Partida</button>
+                </div>
             </div>
-          </div>
         </div>
-        <div class="ventana-container" id="finJuegoContainer">
-          <div class="fin-juego-info" id="finJuegoInfo"></div>
-          <span href="" class="button" id="restartBtn">Volver a jugar</span>
-        </div>
-      </div>
-    <script src="ahorcadoJS.js"></script>
+    </div>
+
+    <script type="text/javascript" src="js/palabras.js"></script>
+    <script type="text/javascript" src="js/codigo.js"></script>
     
 </body>
 </html>
