@@ -3,9 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ahorcado Ejercicio</title>
 </head>
 <body>
+    <p>Ahorcado 2024</p>
+
+    <div id="canvas">
+        <canvas id="persona">
+
+        </canvas>
+    </div>
+
+
+    <div id="teclado">
+        <div id="letras"></div>
+    </div>
+
+    <div class="flex-row" id="turnos">
+        <div class="col">
+          <h3>Intentos restantes: <span id="intentos">6</span></h3>
+        </div>
+        <div class="col">
+          <button onclick="inicio()" id="reset">Elegir otra palabra</button>
+          <button onclick="pista()" id="pista">Dame una pista!</button>
+          <span id="hueco-pista"></span>
+        </div>
+        
+      
+      <div class="flex-row">
+        <div class="col">
+          <div class="flex-row" id="abcdario">
+          </div>
+        </div>
+        <div class="col"></div>
+      </div>
+
+    </div>
     
 </body>
 </html>
