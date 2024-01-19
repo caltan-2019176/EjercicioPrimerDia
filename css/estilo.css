@@ -1,13 +1,11 @@
 body{
-    /* background-image: linear-gradient(120deg, #fccb90 0%, #26ae98 100%);*/
-    /*background-color: #5cd6cc;*/
+
     background-color: #989899;
     font: 400 16px/1.5em sans-serif;
 }
 
 .container{
-    /*background-color: #4fc7c5;*/
-   /* background-color: #6bdc37;*/
+    
     background-color: #5eb3bc;
     height: 100vh;
     padding: 1em;
@@ -39,17 +37,12 @@ body{
     text-transform: uppercase;
 }
 
-.letras{
-    background-color: #4cc484;
-}
-
 
 canvas {
     display: block;
-    margin: auto;
-    border: 2px solid #000000;
-    background-color: #937fb9;
+    background-color: #94cfd3;
   }
+
 .popup {
     position: fixed;
     top: 75%;
@@ -57,8 +50,6 @@ canvas {
     transform: translate(-50%, -50%);
     background-color: #fff;
     padding: 40px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0.5, 0.3);
-    z-index: 4;
     width: 750px; 
     height: 300px; 
     max-width: 90%; 
